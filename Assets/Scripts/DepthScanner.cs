@@ -26,7 +26,7 @@ public class DepthScanner : MonoBehaviour {
         {
             for (int j = 0; j < 424; j++)
             {
-                ColorFromDepth(depthManager.GetData()[i*j]);
+                ColorFromDepth(depthManager.GetData()[512*i + j]);
                 texture.SetPixel(i, j, c);
             }
         }
