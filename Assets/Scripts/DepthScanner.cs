@@ -22,9 +22,9 @@ public class DepthScanner : MonoBehaviour {
 	
 	void Update ()
     {
-        for (int i = 0; i < 512; i++)
+        for (int i = 0; i < 424; i++)
         {
-            for (int j = 0; j < 424; j++)
+            for (int j = 0; j < 512; j++)
             {
                 ColorFromDepth(depthManager.GetData()[512*i + j]);
                 texture.SetPixel(i, j, c);
